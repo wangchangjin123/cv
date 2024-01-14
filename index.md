@@ -18,8 +18,15 @@
 <font color=Yellow>黄色</font>
 <font color=YellowGreen>黄绿色</font>
 
-<img align="right" src="https://img-blog.csdnimg.cn/6ee7cacc267b4ec8b570b2ab9c0a0ce1.png"/>
 
-I am a dedicated researcher with a passion for sustainable agriculture and food production as an agricultural and food scientist. My extensive knowledge of plant and animal biology and my understanding of the environmental, economic, and social factors that impact food systems enable me to make significant contributions to the field.
+![test](data\wali2.png#pic_right)
+
+<div align=right><img src ="data/wali2.png" width=200 height=100/></div>
 
 
+
+<p align="left">I am a dedicated researcher with a passion for sustainable agriculture and
+ food production as an agricultural and food scientist. 
+ My extensive knowledge of plant and animal biology and my understanding 
+ of the environmental, economic, and social factors that impact food 
+ systems enable me to make significant contributions to the field.</p>
