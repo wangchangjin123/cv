@@ -21,12 +21,44 @@
 
 ![test](data\wali2.png#pic_right)
 
-<div align=right><img src ="data/wali2.png" width=200 height=100/></div>
+<div style="display: flex; align-items: center;">
+  <p style="flex: 1;"> am a dedicated researcher with a passion for sustainable agriculture and food production as an agricultural and food scientist. My extensive knowledge of plant and animal biology and my understanding of the environmental, economic, and social fa.</p>
+  <img src="data\wali2.png"  width=200 height=100 alt="Your Image" style="flex: 0;">
+</div>
+
+<video width="320" height="240" controls style="float:left; margin-right: 60px;">
+  <source src="data/demo.mp4" type="video/mp4">
+</video>
 
 
 
-<p align="left">I am a dedicated researcher with a passion for sustainable agriculture and
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<font color=red>红色</font>
+
+
+I am a dedicated researcher with a passion for sustainable agriculture and
  food production as an agricultural and food scientist. 
  My extensive knowledge of plant and animal biology and my understanding 
  of the environmental, economic, and social factors that impact food 
- systems enable me to make significant contributions to the field.</p>
+ systems enable me to make significant contributions to the field.</
+
+
