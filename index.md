@@ -1,4 +1,18 @@
-**这是汪常进图像处理算法的个人主页！**
+
+<span style="font-size: 55px; color: blue;"> Changjin Wang</span>
+
+
+
+<div style="display: flex; align-items: left;">
+  <p style="flex: 1;">  I am currently a robot algorithm engineer at Huawei's Central Research Laboratories , focusing on the key technologies of robots like motor control，robotic arm motion planning and dynamics control,wheel-leg robot whole-body nonlinear MPC control. I graduated from Beijing Institute of Technology(BIT) with a bachelor's degree in mechanical and electronic engineering in 2017. I was subsequently enrolled in the Robotics Institute of BIT and got a master degree in 2020. I received joint training and graduate guidance at the University of Auckland, New Zealand.</p>
+  <img src="data\wali2.png"  width=200 height=100 alt="Your Image" style="flex: 0;">
+</div>
+
+
+
+
+
+
 
 
 ![test](data\12.jpg)
@@ -21,10 +35,6 @@
 
 ![test](data\wali2.png#pic_right)
 
-<div style="display: flex; align-items: center;">
-  <p style="flex: 1;"> am a dedicated researcher with a passion for sustainable agriculture and food production as an agricultural and food scientist. My extensive knowledge of plant and animal biology and my understanding of the environmental, economic, and social fa.</p>
-  <img src="data\wali2.png"  width=200 height=100 alt="Your Image" style="flex: 0;">
-</div>
 
 <video width="320" height="240" controls style="float:left; margin-right: 60px;">
   <source src="data/demo.mp4" type="video/mp4">
