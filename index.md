@@ -1,145 +1,165 @@
+<center>
+    <span style="font-size: 50px; color: black;">Changjin Wang</span>
+</center>
 
-<span style="font-size: 55px; color: blue;"> Changjin Wang</span>
-
-
-
-<div style="display: flex; align-items: left;">
-  <p style="flex: 1;">  I am currently a robot algorithm engineer at Huawei's Central Research Laboratories , focusing on the key technologies of robots like motor control，robotic arm motion planning and dynamics control,wheel-leg robot whole-body nonlinear MPC control. I graduated from Beijing Institute of Technology(BIT) with a bachelor's degree in mechanical and electronic engineering in 2017. I was subsequently enrolled in the Robotics Institute of BIT and got a master degree in 2020. I received joint training and graduate guidance at the University of Auckland, New Zealand.</p>
-  <img src="data\wali2.png"  width=200 height=100 alt="Your Image" style="flex: 0;">
+<div style="display: flex;">
+    <div style="flex: 1;">
+        <p style="text-indent: 2em; font-size: 100%;">
+            &emsp;<span style="font-size: 150%;">I </span>  am currently a robot algorithm engineer at Huawei's Central Research Laboratories , focusing on the key technologies of robots like motor control，robotic arm motion planning and dynamics control,wheel-leg robot whole-body nonlinear MPC control. I graduated from <font color="blue">Beijing Institute of Technology(BIT)</font> with a bachelor's degree in mechanical and electronic engineering in 2017. I was subsequently guanranted enrolled in the Robotics Institute of BIT and got a master degree in 2020. I received joint training and graduate guidance at <font color="blue">the University of Auckland(UoA)</font>, New Zealand.
+        </p>
+    </div>
+    <div style="width: 180px; margin-left: 4ch;">
+        <img src="data\I.jpeg"  height=180 alt="Your Image" style="flex: 0;">
+    </div>
 </div>
 
 
 
+## Publications
 
-Research
-(Some work is publish limited)
+1:  An integrated two-pose calibration method for estimating head-eye parameters of a robotic bionic eye[J]. **IEEE Transactions on Instrumentation and Measurement**, 2019, 69(4): 1664-1672. Chen Xiaopeng, <span style="font-size: 20px; color: black;">Wang Changjin</span>, Zhang Weizhong, et al.(2th Author, First Author is my tutor)
+
+
+[paper](https://ieeexplore.ieee.org/document/8716717) 
+
+2: The Design and Development of an Anthropomorphic Worm-Gear Driven Robotic Hand: BIT-JOCKO.   2019 IEEE 4th **International Conference on Advanced Robotics and Mechatronics (ICARM)**.Changjin Wang,Yao Sun,Jiafeng Xu.etc.   Best Paper Finalist
+
+[paper](https://ieeexplore.ieee.org/document/8834213)
+
+## Work & Research
+(The following work is finished as main contributor,some work is publish-limited)
+
+
+#### Hybrid robot consisit of 18-DOF legged robot + robotic arm
+
+
+ The entire system consists of a 12-DOF wheel-legged robot + 6-DOF robotic arm. The legged robot adopts a similar algorithmic framework as ETH and uses Acados nonlinear MPC control. Floating base kinematic dynamics are employed to achieve 18-DOF full-body Jacobian non-space control and whole-body grasping. It can achieve balance obstacle crossing and chicken head stability.
+
+
+##### Some demos：
+<div style="display: flex; justify-content: space-between;">
+   <iframe src="data/demo.mp4" width="320" height="180" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/allV2.mp4" width="320" height="200" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/wbcGRASP1.mp4"  width="320" height="200" frameborder="0" allowfullscreen></iframe>
 
 
 
-18自由度轮足+机械臂真身控制
+
+<div style="display: flex; justify-content: space-between;">
+  <iframe src="data/chickenHead.mp4" width="320" height="180" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/chickenHeadReal.mp4" width="320" height="200" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/openDoor.mp4"  width="320" height="200" frameborder="0" allowfullscreen></iframe>
+</div>
+
+#### An unified implementation of Point-mass model for 4WIS robot
+
+In this work I approach adopts a continuous optimization mindset to unify the four wheel modes. A single optimization formula is used to address the issues of lateral, oblique, Ackerman steering, and in-place spinning within the four-wheel steering context. This is in contrast to the traditional 4WIS independent control methods, which rely on discrete judgments to switch between motion modes. With this method, the controller can automatically decompose any VX, VY, W commands given to the vehicle in a two-dimensional plane into a point-mass model
+
+##### Some demos：
+<div style="display: flex; justify-content: space-between;">
+   <iframe src="data/centroid.png" width="320" height="180" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/centroid_simulation.mp4" width="320" height="200" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/centroid_model.mp4"  width="320" height="200" frameborder="0" allowfullscreen></iframe>
+
+
+
+#### A low-cost, low-inertia, low-mass compliant force-controlled robotic arm
+
+
+In response to the challenges faced by mobile robots in terms of the existing UR arm, which is costly, heavy, and inconvenient for mobile robots like quadruped deployments, a new lightweight and low-inertia robotic arm with a PIEPPER configuration has been designed. This arm completes kinematics, dynamics, trajectory planning, motion interpolation, and polynomial interpolation based on self-developed FOC (Field-Oriented Control) drivers. Moveit architecture has been discarded, and in its place, a real-time high-performance lightweight robot library has been independently written. The 5kg arm can carry a 2KG payload with a repeatability of about 1mm, and it is cost-effective, making it very suitable for mobile robots to carry.
+
+##### Some demos：
+<div style="display: flex; justify-content: space-between;">
+  <iframe src="data/robotArm2KG.mp4" width="320" height="240" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/robotArm.mp4"  width="320" height="240" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/zeroGravity.mp4" width="320" height="240" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+##### Partner video: [BiliBili](https://www.bilibili.com/video/BV1Wz4y1V7vL/?spm_id_from=333.999.0.0)
+
+
+
+#### One biomimetic eye attitude stabilization algorithm based on a gravity compensation
+
+This project is a research topic during the master's degree stage, focusing on how biomimetic eye robots maintain mechanical stability during motion. A biomimetic eye mechanical stabilization algorithm based on gravity compensation and attitude disturbance observation has been proposed. It compensates for the dynamic response delay caused by gravity and serves as a force feedforward. Meanwhile, an observer is utilized to predict and observe disturbances in advance, which acts as a velocity feedforward. This approach has achieved a disturbance rejection of 5Hz and above with a peak angle of 10°, while maintaining the end-effector's stability within 0.5°.
+
+
+
+
+<div style="display: flex;">
+  <div style="flex: 1;">
+    <img src="data/bioeye2.png" alt="图片描述" />
+  </div>
+  <div style="flex: 2;">
+    <video width="320" height="240" controls>
+      <source src="data/bioeye_stable.mp4" type="video/mp4">
+  </div>
+    </div>
+
+
+#### An online bionic eye external parameter calibration and computation algorithm
+
+
+For biomimetic eye robots, the binocular cameras require movement, but once the cameras move, the external parameters (ex-params) are disrupted. To address this issue, a method for offline calibration and online real-time computation of binocular external parameters is proposed. This method operates the biomimetic eyes to real-time compute the external parameters during motion. As a result, the binocular cameras can accurately locate points in the overlapping field of view and recover depth information, even while moving. Compared to fixed cameras, this approach increases the field of view for moving cameras.
+
+<div style="display: flex;">
+  <div style="flex: 1;">
+    <img src="data/itpc.png" alt="图片描述" />
+  </div>
+  <div style="flex: 1;">
+    <video width="480" height="360" controls>
+      <source src="data/bioeye_depth.mp4" type="video/mp4">
+  </div>
+    </div>
+
+
+#### A biomimetic eye active exploration algorithm based on eye-foot coordination
+
+
+Utilizing biomimetic eyes as an active stereo vision platform, mounted on a mobile robot to achieve Active SLAM (Simultaneous Localization and Mapping). By leveraging the projection maps of Octomap, combined with Gmapping's contour maps, the algorithm seeks visual reconstruction voids, which are the missing points in the 3D scene. Using an effect function to determine the access order of these void points, and integrating the BV (Best View) concept, the algorithm employs the ray projection method to determine the information gain of the field of view. Furthermore, based on position-based visual servoing, the biomimetic eyes are directed to always gaze in the direction of maximum information gain. A exploration strategy based on eye-foot coordination is set, and tasks are allocated based on the ratio of 3D scene coverage to 2D map coverage. This enables the robot to efficiently complete full-angle 3D reconstruction and 2D map construction in completely unfamiliar environments with a one-click start and full autonomy.
+
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1Fm411X7ac&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="640" height="480"> </iframe>
+
   
-    作为项目负责人，负责整个系统的控制算法，12自由度轮足底盘SE3控制，和6自由度 机械臂控制。其中轮足机器人采用ETH 类似的算法框架，并且采用Acados
-    线性MPC 控制。采用浮动基运动学动力学，实现18自由度整身雅可比零空间控制和整身抓取
 
-一种统一通用的质点模型求解4WIS 车辆运动模式算法
+#### An adaptive  dexterous hand
 
-   在四轮独立转向小车基础上，采用连续的优化的思想，将四轮模态统一，用一个优化公式解决了四轮转向中，橫行，斜行，阿克曼转向，原地自旋的问题。而非传统的4WIS 独立控制，通过离散判断切换运动模态。通过该方法，可以给出车辆在二维平面内任意VX,VY,W 指令，控制器会自动分解模态，变成二维平面上一个质点模型，给AGV 带来全新的运动能力。
 
+The worm gear is used to realize the self-locking of the dexterous hand power-off structure, which can theoretically bear the weight within the allowable range of the structural strength. It adopts a modular knuckle design, a highly anthropomorphic design, and has 20 degrees of freedom. It also increases the degree of freedom of the palm side swing, increasing the palm grasping space by 30%.
+<div style="display: flex;">
+  <div style="flex: 1;">
+    <img style="width: 280px; height: 340px;" src="data/hand.png" alt="图片描述" />
+  </div>
+  <div style="flex: 1;">
+    <video width="480" height="360" controls>
+      <source src="data/hand.mp4" type="video/mp4">
+  </div>
+    </div>
 
 
-低成本低惯量底质量的柔顺力控机械臂设计与控制算法
-   
-面对移动机器人的机械臂，现有UR机械臂成本高，重量大，不方便移动机器人比如四足部署。设计出一种新型PIEPPER 构型的轻质低惯量机械臂，完成运动学，动力学，轨迹规划，运动插补，以及在自研的FOC 驱动器基础上的多项式插值。抛弃Moveit 架构，自己写了一个实时高性能轻量机器人库. 5kg 本体可以做到2KG 负载，重复精度1mm左右，成本低廉，非常适合移动机器人搭载
+## Skills:
 
-自研视频：
+C++, Python, MATLAB, proficient in robotic arm lower-level kinematics, dynamics, floating base dynamics, trajectory planning, with self-written libraries; also have strong theoretical derivation ability and solid engineering skills, the ability to insight the essence and bottleneck of problems, familiar with optimal control, no-linear MPC, have a set of own FOC controller supports dual encoder 3-ring control various feedforward and GUI interface.
 
 
-合作方视频:
+## Honors:
 
+Worked at Huawei for 3 years, received two annual A awards, top 15%, and one annual B+.
+National Scholarship（研究生国家奖学金）
+National Motivational Scholarship(国家励志奖学金)
+Tang Nanjun Scholarship（唐南军奖学金）
+SMC Scholarship（SMC 奖学金）
+First-class Academic Scholarship for Graduate Students（研究生一等学业奖学金）
+First Prize in the National College Student "Challenge Cup" Competition（全国大学生挑战杯一等奖）
+First Prize in the National Aerospace Model Competition（全国科研类航空航天模型锦标赛一等奖）
+Second Prize in the National College Student Energy Saving and Emission Reduction Competition（全国大学生节能减排大赛二等奖）
+Top Ten Projects in the National College Student Innovation and Entrepreneurship Annual Meeting（全国互联网+ 大学生创新创业年会双十佳）
 
 
-一种基于重力补偿算法的仿生眼姿态稳定算法
 
-该项目是硕士研究阶段研究课题，仿生眼机器人在运动状态下如何机械稳相，提出了一种基于重力补偿+姿态扰动观测的仿生眼机械稳相算法。补偿因为重力导致的动力学响应偏慢，并作为力前馈，同时利用观测器，对扰动进行预判观测作为速度前馈，实现了5HZ ， 10°以上的扰动，末端维持0.5°以内
+## Contact:
 
-一种连续运动双目外参数标定算法
-仿生眼机器人，双目需要运动，双目一旦运动外参就会破坏，针对这个问题提出一种双目外参离线标定在线实时计算方法，运行仿生眼在运动情况下实时计算外参，这样即可双目在运动情况下对视野交叉区域的点定位和深度恢复，相比固定相机，增加了运动相机的视野
-
-一种基于眼足协调的仿生眼主动探索算法
-
-
-
-
-一种自适应肌电语音混控灵巧手
-
-
-
-Skills:
-
-  C++,python, matlab,精通机械臂底层运动学，动力学，浮动基动力学,轨迹规划，有自己写的库， 另外具有比较强的理论推导能力和扎实的工程能力，洞察问题本质和瓶颈的能力,熟悉最优控制,nlMPC,有一套自己的FOC 控制器支持双编码器3环控制各种前馈和GUI 界面.
-
-
-
-
-Honors:
- 
-华为工作3年获得两次年度 A，top15%,一次年度B+
-
-国家奖学金 
- 国家励志奖学金
- 唐南军奖学金
-  全国大学生挑战杯一等奖  
-  全国科研类航空航天模型锦标赛一等奖 
-   全国大学生节能减排打算二等奖  
-    全国大学生创新创业年会双十佳项目
-
-Scores:
-
-undergraduate stage: 85/100
-mater  state: 90/100
-
-
-
-
-
-
-
-
-
-![test](data\12.jpg)
-
-点此访问昊虹图像处理算法的CSDN博客。
-
-<font face="逐浪新宋">我是逐浪新宋</font>
-<font size=1>字体大小size=1</font>
-<font size=3>字体大小size=3</font>
-<font size=5>字体大小size=5</font>
-<font size=7>字体大小size=7</font>
-
-<font color=red>红色</font>
-<font color="green">绿色</font>
-<font color="blue">蓝色</font>
-<font color="BlueGreen">蓝绿色</font>
-<font color=Yellow>黄色</font>
-<font color=YellowGreen>黄绿色</font>
-
-
-![test](data\wali2.png#pic_right)
-
-
-<video width="320" height="240" controls style="float:left; margin-right: 60px;">
-  <source src="data/demo.mp4" type="video/mp4">
-</video>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<font color=red>红色</font>
-
-
-I am a dedicated researcher with a passion for sustainable agriculture and
- food production as an agricultural and food scientist. 
- My extensive knowledge of plant and animal biology and my understanding 
- of the environmental, economic, and social factors that impact food 
- systems enable me to make significant contributions to the field.</
-
+Email: bitchangjinwang123@163.com
 
