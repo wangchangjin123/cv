@@ -41,7 +41,7 @@
    <iframe src="data/demo.mp4" width="320" height="180" frameborder="0" allowfullscreen></iframe>
   <iframe src="data/allV2.mp4" width="320" height="200" frameborder="0" allowfullscreen></iframe>
   <iframe src="data/wbcGRASP1.mp4"  width="320" height="200" frameborder="0" allowfullscreen></iframe>
-
+</div>
 
 
 
@@ -60,7 +60,7 @@ In this work I approach adopts a continuous optimization mindset to unify the fo
    <iframe src="data/centroid.png" width="320" height="180" frameborder="0" allowfullscreen></iframe>
   <iframe src="data/centroid_simulation.mp4" width="320" height="200" frameborder="0" allowfullscreen></iframe>
   <iframe src="data/centroid_model.mp4"  width="320" height="200" frameborder="0" allowfullscreen></iframe>
-
+</div>
 
 
 #### A low-cost, low-inertia, low-mass compliant force-controlled robotic arm
@@ -69,12 +69,13 @@ In this work I approach adopts a continuous optimization mindset to unify the fo
 In response to the challenges faced by mobile robots in terms of the existing UR arm, which is costly, heavy, and inconvenient for mobile robots like quadruped deployments, a new lightweight and low-inertia robotic arm with a PIEPPER configuration has been designed. This arm completes kinematics, dynamics, trajectory planning, motion interpolation, and polynomial interpolation based on self-developed FOC (Field-Oriented Control) drivers. Moveit architecture has been discarded, and in its place, a real-time high-performance lightweight robot library has been independently written. The 5kg arm can carry a 2KG payload with a repeatability of about 1mm, and it is cost-effective, making it very suitable for mobile robots to carry.
 
 ##### Some demos：
+<div style="display: flex;">
 <div style="display: flex; justify-content: space-between;">
   <iframe src="data/robotArm2KG.mp4" width="320" height="240" frameborder="0" allowfullscreen></iframe>
   <iframe src="data/robotArm.mp4"  width="320" height="240" frameborder="0" allowfullscreen></iframe>
   <iframe src="data/zeroGravity.mp4" width="320" height="240" frameborder="0" allowfullscreen></iframe>
 </div>
-
+</div>
 
 ##### Partner video: [BiliBili](https://www.bilibili.com/video/BV1Wz4y1V7vL/?spm_id_from=333.999.0.0)
 
