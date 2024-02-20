@@ -1,0 +1,15 @@
+$container-width-desktop: 1200px;$container-width-tablet: 960px;
+$container-width-mobile: 768px;
+/* 容器样式 */
+.container {
+  width: 100%;
+  max-width: $container-width-desktop;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media (max-width: $container-width-tablet) {
+    max-width: $container-width-tablet;
+  }
+  @media (max-width: $container-width-mobile) {
+    max-width: $container-width-mobile;
+  }
+}
