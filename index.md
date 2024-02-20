@@ -1,3 +1,7 @@
+<head>
+  <!-- 其他 head 元素 -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <center>
     <span style="font-size: 50px; color: black;">Changjin Wang</span>
 </center>
@@ -43,13 +47,15 @@
   <iframe src="data/wbcGRASP1.mp4"  width="250" height="180" frameborder="0" allowfullscreen></iframe>
 </div>
 
+
+
+
 <div style="display: flex; justify-content: space-between;">
-  <iframe src="data/demo.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
-  <div style="width: 20px;"></div> <!-- 在这里添加一个宽度为20px的空白div -->
-  <iframe src="data/allV2.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
-  <div style="width: 20px;"></div> <!-- 在这里添加另一个宽度为20px的空白div -->
-  <iframe src="data/wbcGRASP1.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/demo.mp4" width="320" height="180" style="flex: 1; margin: 0 10px;" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/allV2.mp4" width="320" height="180" style="flex: 1; margin: 0 10px;" frameborder="0" allowfullscreen></iframe>
+  <iframe src="data/wbcGRASP1.mp4" width="320" height="180" style="flex: 1; margin: 0 10px;" frameborder="0" allowfullscreen></iframe>
 </div>
+
 
 
 <div style="display: flex; justify-content: space-between;">

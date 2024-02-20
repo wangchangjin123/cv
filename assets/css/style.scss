@@ -1,15 +1,13 @@
-$container-width-desktop: 1200px;$container-width-tablet: 960px;
-$container-width-mobile: 768px;
-/* 容器样式 */
-.container {
-  width: 100%;
-  max-width: $container-width-desktop;
-  margin: 0 auto;
-  padding: 0 15px;
-  @media (max-width: $container-width-tablet) {
-    max-width: $container-width-tablet;
+/* 指定 body 的宽度 */
+body {
+    width: 960px; /* 设置您希望的宽度 */
+    margin: 0 auto; /* 水平居中 */
   }
-  @media (max-width: $container-width-mobile) {
-    max-width: $container-width-mobile;
+  
+  /* 对于响应式设计，您可以使用媒体查询来根据屏幕大小调整宽度 */
+  @media (max-width: 768px) {
+    body {
+      width: 100%; /* 在小屏幕上，宽度为100% */
+    }
   }
-}
+  
