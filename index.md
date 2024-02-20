@@ -1,7 +1,5 @@
-<head>
-  <!-- 其他 head 元素 -->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+<div style="width: 960px; margin: 0 auto;">
+
 <center>
     <span style="font-size: 50px; color: black;">Changjin Wang</span>
 </center>
@@ -177,3 +175,5 @@ Top Ten Projects in the National College Student Innovation and Entrepreneurship
 
 Email: bitchangjinwang123@163.com
 
+  这里是您的页面内容。
+</div>
