@@ -1,12 +1,135 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Demo</title>
+    <title>Changjin Wang</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: black;
+            text-align: center;
+        }
+
+        p {
+            text-indent: 2em;
+            font-size: 100%;
+        }
+
+        #publications, #work-research, #skills, #honors, #contact {
+            margin-top: 20px;
+        }
+
+        #work-research div, #work-research iframe {
+            flex: 1;
+        }
+
+        #work-research img {
+            width: 180px;
+            margin-left: 4ch;
+            flex: 0;
+        }
+
+        #work-research div:nth-child(odd) {
+            margin-right: 20px;
+        }
+
+        #work-research iframe {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, GitHub Pages!</h1>
-    <p>This is a simple HTML page for demonstration purposes.</p>
+
+<h1>Changjin Wang</h1>
+
+<div style="display: flex;">
+    <div style="flex: 1;">
+        <p>
+            &emsp;<span style="font-size: 150%;">I </span> am currently a robot algorithm engineer at Huawei's Central Research Laboratories, focusing on key technologies such as motor control, robotic arm motion planning and dynamics control, wheel-leg robot whole-body nonlinear MPC control. I graduated from <font color="blue">Beijing Institute of Technology (BIT)</font> with a bachelor's degree in mechanical and electronic engineering in 2017. I was subsequently granted enrollment in the Robotics Institute of BIT and got a master's degree in 2020. I received joint training and graduate guidance at <font color="blue">the University of Auckland (UoA)</font>, New Zealand.
+        </p>
+    </div>
+    <div style="width: 180px; margin-left: 4ch;">
+        <img src="data/I.jpeg" height="180" alt="Your Image" style="flex: 0;">
+    </div>
+</div>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <ol>
+        <li>
+            An integrated two-pose calibration method for estimating head-eye parameters of a robotic bionic eye[J].
+            <strong>IEEE Transactions on Instrumentation and Measurement</strong>, 2019, 69(4): 1664-1672.
+            Chen Xiaopeng, <span style="font-size: 20px; color: black;">Wang Changjin</span>, Zhang Weizhong, et al.
+            (2th Author, First Author is my tutor)
+            <br>
+            <a href="https://ieeexplore.ieee.org/document/8716717">[paper]</a>
+        </li>
+        <li>
+            The Design and Development of an Anthropomorphic Worm-Gear Driven Robotic Hand: BIT-JOCKO.
+            2019 IEEE 4th <strong>International Conference on Advanced Robotics and Mechatronics (ICARM)</strong>.
+            Changjin Wang, Yao Sun, Jiafeng Xu, etc. Best Paper Finalist
+            <br>
+            <a href="https://ieeexplore.ieee.org/document/8834213">[paper]</a>
+        </li>
+    </ol>
+</section>
+
+<section id="work-research">
+    <h2>Work & Research</h2>
+
+    <article>
+        <h3>Hybrid robot consisting of 18-DOF legged robot + robotic arm</h3>
+        <p>
+            The entire system consists of a 12-DOF wheel-legged robot + 6-DOF robotic arm. The legged robot adopts a similar algorithmic framework as ETH and uses Acados nonlinear MPC control. Floating base kinematic dynamics are employed to achieve 18-DOF full-body Jacobian non-space control and whole-body grasping. It can achieve balance obstacle crossing and chicken head stability.
+        </p>
+
+        <h4>Some demos:</h4>
+        <div style="display: flex; justify-content: space-between;">
+            <iframe src="data/demo.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
+            <iframe src="data/allV2.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
+            <iframe src="data/wbcGRASP1.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+   
+
+        <div style="display: flex; justify-content: space-between;">
+            <iframe src="data/chickenHead.mp4" width="250" height="110" frameborder="0" allowfullscreen></iframe>
+            <iframe src="data/chickenHeadReal.mp4" width="250" height="110" frameborder="0" allowfullscreen></iframe>
+            <iframe src="data/openDoor.mp4" width="250" height="110" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </article>
+
+    <!-- Add more articles as needed -->
+
+</section>
+
+<!-- Add more sections (Work & Research) as needed -->
+
+<section id="skills">
+    <h2>Skills</h2>
+    <p>C++, Python, MATLAB, proficient in robotic arm lower-level kinematics, dynamics, floating base dynamics, trajectory planning, with self-written libraries; also have strong theoretical derivation ability and solid engineering skills, the ability to insight the essence and bottleneck of problems, familiar with optimal control, no-linear MPC, have a set of own FOC controller supports dual encoder 3-ring control various feedforward and GUI interface.</p>
+</section>
+
+<section id="honors">
+    <h2>Honors</h2>
+    <ul>
+        <li>Worked at Huawei for 3 years, received two annual A awards, top 15%, and one annual B+.</li>
+        <li>National Scholarship（研究生国家奖学金）</li>
+        <!-- Add more honors as needed -->
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: bitchangjinwang123@163.com</p>
+</section>
+
 </body>
 </html>
