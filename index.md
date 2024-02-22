@@ -27,7 +27,7 @@
 2: The Design and Development of an Anthropomorphic Worm-Gear Driven Robotic Hand: BIT-JOCKO.   2019 IEEE 4th **International Conference on Advanced Robotics and Mechatronics (ICARM)**.Changjin Wang,Yao Sun,Jiafeng Xu.etc.   Best Paper Finalist
 
 [paper](https://ieeexplore.ieee.org/document/8834213)
-
+</div>
 ## Work & Research
 (The following work is finished as main contributor,some work is publish-limited)
 
@@ -176,4 +176,3 @@ Top Ten Projects in the National College Student Innovation and Entrepreneurship
 Email: bitchangjinwang123@163.com
 
   这里是您的页面内容。
-</div>
