@@ -2,21 +2,19 @@
     <span style="font-size: 50px; color: black;">Changjin Wang</span>
 </center>
 
-<div style="display: flex;">
-    <div style="flex: 1;">
-        <p style="text-indent: 2em; font-size: 100%;">
-            &emsp;<span style="font-size: 150%;">I </span>  am currently a robot algorithm engineer at Huawei's Central Research Laboratories , focusing on the key technologies of robots like motor control，robotic arm motion planning and dynamics control,wheel-leg robot whole-body nonlinear MPC control. I graduated from <font color="blue">Beijing Institute of Technology(BIT)</font> with a bachelor's degree in mechanical and electronic engineering in 2017. I was subsequently guanranted enrolled in the Robotics Institute of BIT and got a master degree in 2020. I received joint training and graduate guidance at <font color="blue">the University of Auckland(UoA)</font>, New Zealand.
-        </p>
-    </div>
-    <div style="width: 180px; margin-left: 4ch;">
-        <img src="data\I.jpeg"  height=180 alt="Your Image" style="flex: 0;">
-    </div>
-</div>
+Recommend to visit my personal website for more detailed videos and explanation: https://wangchangjin123.github.io/cv/
 
+## Education:
+Mechanical Electronic Engineering,**Beijing Institute of Technology** (Bachelor degree, 2013-2017)
 
-for more infomation,please refer to my personal website: https://wangchangjin123.github.io/cv/
+Mechanical Engineering,**The University of Auckland** (Jointed-traning student, 2017)
 
-## Publications
+Bionic Robot Engineering ,**Beijing Institute of Technology** (Master degree,2017-2020)
+
+## Work:
+Huawei Technologies Co., Ltd (Robot algorithm engineer，2020.7 - now)
+
+## Publications:
 
 1:  An integrated two-pose calibration method for estimating head-eye parameters of a robotic bionic eye[J]. **IEEE Transactions on Instrumentation and Measurement**, 2019, 69(4): 1664-1672. Chen Xiaopeng, Wang Changjin, Zhang Weizhong, et al.(2nd Author, First Author is my tutor)
 
@@ -27,30 +25,38 @@ for more infomation,please refer to my personal website: https://wangchangjin123
 
 [paper](https://ieeexplore.ieee.org/document/8834213)
 
+## Projects:
+  #### Hybrid robot consisting of 18-DOF legged robot + robotic arm
+   The system integrates a 12-DOF wheel-legged robot with a 6-DOF robotic arm, employing Acados's nonlinear solver and an algorithmic framework similar to ETH. Friction cone constraints in the nonlinear MPC analyze wheel-foot contact forces, ensuring kinematic feasibility. The design, resembling an Ackerman vehicle, utilizes floating-based kinematics for 18-DOF full-body Jacobian non-space control, enabling whole-body grasping and obstacle traversal with balance
+  #### An unified implementation of Point-mass model for 4WIS robot
+This work employs continuous optimization to unify four-wheel modes, optimizing energy consumption. Unlike traditional methods, it automatically decomposes commands into a point-mass model, enabling any-trajectory following within max velocity.
+ #### A low-cost, low-inertia, low-mass compliant force-controlled robotic arm
+To address challenges in mobile robotics, a lightweight, low-inertia PIEPPER-configured robotic arm is designed, featuring self-developed FOC drivers for kinematics, dynamics, and trajectory planning. The 5kg arm, discarding Moveit architecture, achieves high precision and smoothness, making it cost-effective for mobile robots.
+   ####   One biomimetic eye attitude stabilization algorithm based on gravity compensation
+This project focuses on biomimetic eye robots and introduces a stabilization algorithm using gravity compensation and attitude disturbance observation. Achieving disturbance rejection of 5Hz and above, it maintains end-effector stability within 0.5°.
+  #### An online bionic eye external parameter calibration and computation algorithm
+   For biomimetic eye robots, a method is proposed for real-time computation of binocular external parameters during motion, enhancing accuracy in locating points and recovering depth information. This approach increases the field of view for moving cameras compared to fixed ones.
 
+ ####  A biomimetic eye active exploration algorithm based on eye-foot coordination
+  Utilizing biomimetic eyes for Active SLAM, the algorithm integrates Octomap's projection maps and Gmapping's contour maps to identify visual reconstruction voids. Employing ray projection and Best View concepts, the robot achieves efficient 3D reconstruction and 2D map construction in unfamiliar environments with full autonomy
+#### An adaptive dexterous hand
 
+The dexterous hand employs a worm gear for power-off self-locking, theoretically supporting weight within structural strength limits. With a modular knuckle design and highly anthropomorphic features, it offers 20 degrees of freedom, enhancing palm grasping space by 30% through increased palm side swing freedom
 
 ## Skills:
-
-C++, Python, MATLAB, proficient in robotic arm lower-level kinematics, dynamics, floating base dynamics, trajectory planning, with self-written libraries; also have strong theoretical derivation ability and solid engineering skills, the ability to insight the essence and bottleneck of problems, familiar with optimal control, no-linear MPC, have a set of own FOC controller supports dual encoder 3-ring control various feedforward and GUI interface.
-
-
+C++, Python, MATLAB, good at robotic arm lower-level kinematics, dynamics, floating base dynamics, trajectory planning, familiar with optimal control.
 ## Honors:
-
 Worked at Huawei for 3 years, received two annual A awards, top 15%, and one annual B+.
-National Scholarship（研究生国家奖学金）
-National Motivational Scholarship(国家励志奖学金)
-Tang Nanjun Scholarship（唐南军奖学金）
-SMC Scholarship（SMC 奖学金）
-First-class Academic Scholarship for Graduate Students（研究生一等学业奖学金）
-First Prize in the National College Student "Challenge Cup" Competition（全国大学生挑战杯一等奖）
-First Prize in the National Aerospace Model Competition（全国科研类航空航天模型锦标赛一等奖）
-Second Prize in the National College Student Energy Saving and Emission Reduction Competition（全国大学生节能减排大赛二等奖）
-Top Ten Projects in the National College Student Innovation and Entrepreneurship Annual Meeting（全国互联网+ 大学生创新创业年会双十佳）
-
-
+National Scholarship
+National Motivational Scholarship
+Tang Nanjun Scholarship
+SMC Scholarship
+First-class Academic Scholarship for Graduate Students
+First Prize in the National College Student "Challenge Cup" Competition
+First Prize in the National Aerospace Model Competition
+Second Prize in the National College Student Energy Saving and Emission Reduction Competition
+Top Ten Projects in the National College Student Innovation and Entrepreneurship Annual Meeting
 
 ## Contact:
 
 Email: bitchangjinwang123@163.com
-
