@@ -161,7 +161,7 @@
     <h2>Work & Research</h2>
     <p>
       (The following work is finished as the main contributor; some work is
-      publish-limited)
+      <strong>publish-limited</strong>, detailed is simplied)
     </p>
 
     <h3>Hybrid robot consisting of 18-DOF legged robot + robotic arm</h3>
@@ -169,10 +169,12 @@
     <p>
       The entire system consists of a 12-DOF wheel-legged robot + 6-DOF robotic
       arm. The legged robot adopts a similar algorithmic framework as ETH and
-      uses Acados's nonlinear MPC control. Floating base kinematic dynamics are
-      employed to achieve 18-DOF full-body Jacobian non-space control and
-      whole-body grasping. It can achieve balance obstacle crossing and chicken
-      head stability.
+      uses Acados's nonlinear solver. The contact force at the wheel-foot is decomposed into normal and 
+      tangential components, with friction cone constraints incorporated as 
+      <strong>nonlinear constraints</strong> in the <strong>nonlinear MPC</strong>. The remaining constraints involve kinematic feasibility. Unlike the ETH Anymal, 
+      the entire wheel-foot system is closer to a Ackerman vehicle in Top-down view. Furthermore,<strong>floating-based kinematic and dynamics</strong> are
+      employed to achieve <strong>18-DOF full-body Jacobian non-space control</strong> and
+      whole-body grasping. It can also achieve balance while  crossing obstacle.
     </p>
 
     <h4>Some demos:</h4>
@@ -196,14 +198,14 @@
     <h3>An unified implementation of Point-mass model for 4WIS robot</h3>
 
     <p>
-      In this work, I approach adopt a continuous optimization mindset to unify
+      In this work, I approach adopt a <strong>continuous optimization mindset</strong> to <strong>unify</strong>
       the four-wheel modes. A single optimization formula is used to address the
       issues of lateral, oblique, Ackerman steering, and in-place spinning
-      within the four-wheel steering context which can achieve optimal energy consumption. This is in contrast to the
+      within the four-wheel steering context which can achieve <strong>optimal energy consumption</strong>. This is <strong>in contrast to</strong> the
       traditional 4WIS independent control methods, which rely on discrete
       judgments to switch between motion modes. With this method, the controller
       can automatically decompose any VX, VY, W commands given to the vehicle in
-      a two-dimensional plane into a point-mass model.
+      a two-dimensional plane into a <strong> point-mass model</strong>, which means you can  <strong>follow any trajectory</strong> in plane within max velocity!
     </p>
 
     <h4>Some demos:</h4>
@@ -230,11 +232,11 @@
       existing UR arm, which is costly, heavy, and inconvenient for mobile
       robots like quadruped deployments, a new lightweight and low-inertia
       robotic arm with a PIEPPER configuration has been designed. This arm
-      completes kinematics, dynamics, trajectory planning, motion interpolation,
+      completes <strong>kinematics, dynamics, trajectory planning, motion interpolation</strong>
       and polynomial interpolation based on self-developed FOC (Field-Oriented
-      Control) drivers. Moveit architecture has been discarded, and in its
+      Control) drivers. interpolation is integrated into the FOC driver to achieve higher precision and smoothness. <strong>Moveit architecture has been discarded</strong>, and in its
       place, a real-time high-performance lightweight robot library has been
-      independently written. The 5kg arm can carry a 2 kg payload with a
+      independently written. The 5kg arm can carry a 2.5 kg payload with a
       repeatability of about 1mm, and it is cost-effective, making it very
       suitable for mobile robots to carry.
     </p>
@@ -267,7 +269,7 @@
       This project is a research topic during the master's degree stage,
       focusing on how biomimetic eye robots maintain mechanical stability during
       motion. A biomimetic eye mechanical stabilization algorithm based on
-      gravity compensation and attitude disturbance observation has been
+      <strong>gravity compensation and attitude disturbance observation</strong> has been
       proposed. It compensates for the dynamic response delay caused by gravity
       and serves as a force feedforward. Meanwhile, an observer is utilized to
       predict and observe disturbances in advance, which acts as a velocity
@@ -292,12 +294,12 @@
       For biomimetic eye robots, the binocular cameras require movement, but
       once the cameras move, the external parameters (ex-params) are disrupted.
       To address this issue, a method for offline calibration and online
-      real-time computation of binocular external parameters is proposed. This
+      <strong> real-time computation of binocular external parameters</strong> is proposed. This
       method operates the biomimetic eyes to  compute the external
       parameters during motion. As a result, the binocular cameras can
       accurately locate points in the overlapping field of view and recover
       depth information, even while moving. Compared to fixed cameras, this
-      approach increases the field of view for moving cameras.
+      approach <strong>increases the field of view for moving cameras</strong>.
     </p>
 
 
