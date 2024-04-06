@@ -1,0 +1,21 @@
+
+Dear Admissions Committee,
+
+I am writing to express my sincere interest in applying for the Robotics PHD program at your prestigious institution. With a strong background in robot control, embodied artificial intelligence, and a deep passion for advancing the field of robotics, I am confident that your program aligns perfectly with my academic interests and career aspirations.
+
+Over the past few years, I have had the privilege of working as a robot algorithm engineer at Huawei's Central Research Laboratories. This experience has provided me with invaluable hands-on opportunities to tackle complex challenges in motor control, robotic arm motion planning, dynamics control, and nonlinear model predictive control (NMPC) for legged robots. Notably, I have made significant contributions to the development of an 18-DOF hybrid robot system, consisting of a 12-DOF wheel-legged robot and a 6-DOF robotic arm. By incorporating floating-base kinematics, dynamics, and whole-body Jacobian control, this system achieves robust balance and grasping capabilities, even when overcoming obstacles. 
+
+Furthermore, my research on a unified point-mass model for four-wheel independent steering (4WIS) robots has yielded promising results. By formulating a continuous optimization framework, I have developed a single control scheme that seamlessly handles lateral, oblique, Ackermann steering, and in-place spinning motions. This unified approach optimizes energy consumption and enables omnidirectional trajectory tracking, transcending the limitations of traditional mode-switching methods.
+
+Complementing my technical expertise, I have also explored the fascinating realm of biomimetic robotics. My master's thesis at the Beijing Institute of Technology (BIT) focused on an attitude stabilization algorithm for a robotic bionic eye, which leverages gravity compensation and disturbance observation to achieve remarkable stability during motion. This work has inspired me to delve deeper into the synergy between biological systems and robotic design principles.
+
+In addition to my research endeavors, I have actively contributed to the robotics community through various publications and conference presentations. My paper on "An integrated two-pose calibration method for estimating head-eye parameters of a robotic bionic eye" was published in the prestigious IEEE Transactions on Instrumentation and Measurement. I also had the honor of receiving the Best Paper Finalist award at the 2019 IEEE International Conference on Advanced Robotics and Mechatronics for my work on "The Design and Development of an Anthropomorphic Worm-Gear Driven Robotic Hand: BIT-JOCKO."
+
+Beyond my academic and professional achievements, I am driven by an unwavering curiosity and a relentless pursuit of knowledge. I firmly believe that the field of embodied intelligence and robot control holds immense potential for transformative breakthroughs that can benefit society in numerous ways. Your institution's exceptional reputation, world-class faculty, and cutting-edge research facilities make it an ideal environment for me to further advance my skills and contribute to groundbreaking discoveries.
+
+I am confident that my unique combination of theoretical knowledge, practical experience, and genuine passion for robotics and embodied intelligence will enable me to thrive in your graduate program. I am eager to collaborate with leading experts, engage in interdisciplinary research, and push the boundaries of what is possible in this fascinating field.
+
+Thank you for considering my application. I look forward to the opportunity to discuss my qualifications and research interests further.
+
+Sincerely,
+Changjin Wang
