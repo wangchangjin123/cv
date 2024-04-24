@@ -1,0 +1,53 @@
+<style>
+    .video-container {
+        display: flex; /* 设置容器为Flex布局 */
+        flex-wrap: wrap; /* 允许内容换行 */
+        justify-content: center; /* 水平居中内容 */
+    }
+    .video-box {
+        display: flex; /* 使用Flex布局 */
+        flex-direction: column; /* 设置为垂直方向 */
+        align-items: center; /* 垂直居中对齐子项 */
+        margin: 10px; /* 给视频盒子添加一些间隔 */
+    }
+    iframe {
+        width: 300px; /* 视频宽度 */
+        height: 180px; /* 视频高度 */
+      
+    }
+    .video-label {
+        margin-top: 4px; /* 在视频和标签之间添加一点空间 */
+        font-size: 16px; /* 标签的字体大小 */
+        font-weight: bold; /* 字体加粗 */
+    }
+</style>
+
+<div class="video-container">
+    <div class="video-box">
+        <iframe src="data/demo1.mp4" allowfullscreen></iframe>
+        <div class="video-label">A</div>
+    </div>
+    <div class="video-box">
+        <iframe src="data/balance1.mp4" allowfullscreen></iframe>
+        <div class="video-label">B</div>
+    </div>
+    <div class="video-box">
+        <iframe src="data/wbc1.mp4" allowfullscreen></iframe>
+        <div class="video-label">C</div>
+    </div>
+</div>
+
+<div class="video-container">
+    <div class="video-box">
+        <iframe src="data/chickenHead1.mp4" allowfullscreen></iframe>
+        <div class="video-label">D</div>
+    </div>
+    <div class="video-box">
+        <iframe src="data/stand1.mp4" allowfullscreen></iframe>
+        <div class="video-label">E</div>
+    </div>
+    <div class="video-box">
+        <iframe src="data/openDoor.mp4" allowfullscreen></iframe>
+        <div class="video-label">F</div>
+    </div>
+</div>

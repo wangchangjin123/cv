@@ -4,6 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Changjin Wang</title>
+    
+    <style>
+      .custom-video-container {
+          display: flex; /* 使用flex布局 */
+          flex-wrap: wrap; /* 允许内容换行 */
+          justify-content: space-around; /* 分散对齐每个视频和标签 */
+          align-items: flex-start; /* 垂直对齐开始位置 */
+          max-width: 960px; /* 容器的最大宽度，确保三个视频可以在一行内展示 */
+          margin: auto; /* 整个容器居中 */
+      }
+      .custom-video-box {
+          display: flex; /* 使用flex布局 */
+          flex-direction: column; /* 垂直排列 */
+          align-items: center; /* 垂直居中对齐子项 */
+          flex: 0 0 290px; /* 不允许视频盒子增长或缩小，固定宽度为300px */
+          margin: 1px; /* 视频框之间的间隔 */
+      }
+      .custom-iframe {
+          display: block; /* 设置为块级元素 */
+          width: 100%; /* 宽度100%相对于父元素 */
+          height: 180px; /* 固定高度 */
+         
+      }
+      .custom-video-label {
+          margin-top: 4px; /* 标签顶部间隔 */
+          font-size: 12px; /* 字体大小 */
+          font-weight: bold; /* 字体加粗 */
+          
+      }
+      .custom-p {
+        margin-top: 4px; /* 上边距 */
+        margin-bottom: 4px; /* 下边距 */
+        font-size: 16px; /* 可选，调整字体大小 */
+
+    }
+    .item-label {
+      margin-top: 4px; /* Margin above the label */
+      font-size: 16px; /* Font size of the label */
+      font-weight: bold; /* Make the label text bold */
+  }
+  </style>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -180,20 +221,45 @@
     <h4>Some demos:</h4>
   
 
-    <div class="video-container">
-      <iframe src="data/demo1.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-      <iframe src="data/balance1.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-      <iframe src="data/wbc1.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <p>   </p>
-  <div class="video-container">
-    <iframe src="data/chickenHead1.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-    <iframe src="data/stand1.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-    <iframe src="data/openDoor.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
   
+  <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/demo1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">A</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/balance1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">B</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/wbc1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">C</div>
+      </div>
+  </div>
+  
+  <p></p>
+  
+  <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/chickenHead1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">D</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/stand1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">E</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/openDoor.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">F</div>
+      </div>
+  </div>
+
+<custom-p><strong>Explain:</strong>A: Simulation and comparison of a 12-degree-of-freedom car chassis in inclined, dual Ackermann, and in-place spinning mode. 
+  &nbsp&nbspB: Crossing slopes and stairs while maintaining balance of a cup at the end.
+  &nbsp&nbspC: Servo end-effector pose during whole-body stationary movement. 
+  &nbsp&nbsp D: 18-degree-of-freedom pecking mode. &nbsp&nbspE: Chassis with dual-wheels standing. &nbsp&nbspF: Simulation of an 18-degree-of-freedom door opening.</custom-p>
+
+
 
     <h3>An unified implementation of Point-mass model for 4WIS robot</h3>
 
@@ -211,13 +277,29 @@
     <h4>Some demos:</h4>
 
     <p>   </p>
-    <div class="video-container">
-     
-      <img src="data/centroid.png" alt="Your Image">
-      <iframe src="data/centroid_simulation.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-      <iframe src="data/centroid_model.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-  </div>
+
   
+  <div class="custom-video-container">
+    <div class="custom-video-box">
+        <img class="custom-img" src="data/centroid.png" alt="Your Image">
+      
+    </div>
+    <div class="custom-video-box">
+        <iframe class="custom-iframe" src="data/centroid_simulation.mp4" allowfullscreen></iframe>
+        <div class="custom-video-label">A</div> <!-- 模拟的标签，可以更改 -->
+    </div>
+    <div class="custom-video-box">
+        <iframe class="custom-iframe" src="data/centroid_model.mp4" allowfullscreen></iframe>
+        <div class="custom-video-label">B</div> <!-- 模型的标签，可以更改 -->
+    </div>
+</div>
+
+<custom-p><strong>Explain:</strong> left image illustrate various motion modes of an AGV cart, including four-wheel straight-line motion, four-wheel lateral motion, four-wheel oblique motion, dual Ackermann steering, and oblique turning mode.
+
+  &nbsp A is a simulation where the four wheels continuously switch between multiple modes, all controlled by a single optimized equation for seamless motion.
+  
+  &nbsp B is a physical demonstration of the simulation shown in A.
+ </custom-p>
 
 
 
@@ -236,20 +318,35 @@
       and polynomial interpolation based on self-developed FOC (Field-Oriented
       Control) drivers. interpolation is integrated into the FOC driver to achieve higher precision and smoothness. <strong>Moveit architecture has been discarded</strong>, and in its
       place, a real-time high-performance lightweight robot library has been
-      independently written. The 5kg arm can carry a 2.5 kg payload with a
-      repeatability of about 1mm, and it is cost-effective, making it very
+      independently written. <strong>The 5kg arm can carry a 2.5 kg payload with a
+        repeatability of about 1mm and reachable length of 920mm</strong>and it is cost-effective, making it very
       suitable for mobile robots to carry.
     </p>
 
     <h4>Some demos:</h4>
 
     <p>   </p>
-    <div class="video-container">
-      <iframe src="data/robotArm2KG.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-      <iframe src="data/robotArm.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
-      <iframe src="data/zeroGravity.mp4" width="300" height="180" frameborder="0" allowfullscreen></iframe>
+    <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/robotArm2KG.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">A</div> <!-- Label for the video, can be customized -->
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/robotArm.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">B</div> <!-- Label for the video, can be customized -->
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/zeroGravity.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">C</div> <!-- Label for the video, can be customized -->
+      </div>
   </div>
+  <custom-p><strong>Explain:</strong>A is a robotic arm moving in a straight line, with a 2KG load at the end, drawing a rectangle.
 
+    &nbsp B includes various modes of the robotic arm, involving multiple curved motions in joint space and Cartesian straight-line motion.
+    
+    &nbsp C is the robotic arm operating in a zero-force mode with dynamic compensation
+   </custom-p>
+  
 
 
     <h4>
@@ -282,8 +379,12 @@
 
     <div class="row">
       <img src="data/bioeye2.png" alt="Your Image">
+      
       <iframe src="data/bioeye_stable.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
   </div>
+
+  
+
 
     <h3>
       An online bionic eye external parameter calibration and computation
@@ -319,7 +420,17 @@
         </video>
       </div>
     </div>
+    <p>   </p>
+  
 
+    <custom-p><strong>Explain:</strong>left is a schematic diagram of the algorithm, which consists of two steps, 
+      taking multiple sets of pictures at two different locations.
+  
+       &nbsp right video involves using the algorithm for depth recovery. It is not the neck that is rotating, but the eyes; rather,
+       the extrinsic parameters of the two cameras are continuously changing.
+       Compared to traditional fixed cameras, the Field of View (FOV) can increase by 200%. 
+      The relationship with the previous work is that one is responsible for image stabilization, and the other for increasing the field of view.
+     </custom-p>
 
 
 
