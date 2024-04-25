@@ -180,9 +180,9 @@
         An integrated two-pose calibration method for estimating head-eye
         parameters of a robotic bionic eye[J].
         <strong>IEEE Transactions on Instrumentation and Measurement</strong>,
-        2019, 69(4): 1664-1672. Chen Xiaopeng,
-        <span style="font-size: 20px; color: black">Wang Changjin</span>, Zhang
-        Weizhong, et al. (2nd Author, the first Author is my tutor)
+        2019, 69(4): 1664-1672. Xiaopeng Chen,
+        <strong>Changjin Wang</strong>,
+        Weizhong  Zhang, et al. (2nd Author, the first Author is my tutor)
         <br />
         <a href="https://ieeexplore.ieee.org/document/8716717">Paper</a>
       </li>
@@ -193,7 +193,7 @@
         <strong
           >International Conference on Advanced Robotics and Mechatronics
           (ICARM)</strong
-        >. Changjin Wang, Yao Sun, Jiafeng Xu, etc. Best Paper Finalist
+        >.  <strong>Changjin Wang</strong>, Yao Sun, Jiafeng Xu, etc. Best Paper Finalist
         <br />
         <a href="https://ieeexplore.ieee.org/document/8834213">Paper</a>
       </li>
@@ -202,7 +202,7 @@
     <h2>Work & Research</h2>
     <p>
       (The following work is finished as the main contributor; some work is
-      <strong>publish-limited</strong>, detailed is simplied)
+      <strong>publication-limited</strong>)
     </p>
 
     <h3>Hybrid robot consisting of 18-DOF legged robot + robotic arm</h3>
@@ -214,7 +214,7 @@
       tangential components, with friction cone constraints incorporated as 
       <strong>nonlinear constraints</strong> in the <strong>nonlinear MPC</strong>. The remaining constraints involve kinematic feasibility. Unlike the ETH Anymal, 
       the entire wheel-foot system is closer to a Ackerman vehicle in Top-down view. Furthermore,<strong>floating-based kinematic and dynamics</strong> are
-      employed to achieve <strong>18-DOF full-body Jacobian non-space control</strong> and
+      employed to achieve <strong>18-DOF full-body Jacobian null-space control</strong> and
       whole-body grasping. It can also achieve balance while  crossing obstacle.
     </p>
 
@@ -249,7 +249,7 @@
           <div class="custom-video-label">E</div>
       </div>
       <div class="custom-video-box">
-          <iframe class="custom-iframe" src="data/openDoor.mp4" allowfullscreen></iframe>
+          <iframe class="custom-iframe" src="data/opendoor1.mp4" allowfullscreen></iframe>
           <div class="custom-video-label">F</div>
       </div>
   </div>
@@ -332,11 +332,11 @@
           <div class="custom-video-label">A</div> <!-- Label for the video, can be customized -->
       </div>
       <div class="custom-video-box">
-          <iframe class="custom-iframe" src="data/robotArm.mp4" allowfullscreen></iframe>
+          <iframe class="custom-iframe" src="data/arm1.mp4" allowfullscreen></iframe>
           <div class="custom-video-label">B</div> <!-- Label for the video, can be customized -->
       </div>
       <div class="custom-video-box">
-          <iframe class="custom-iframe" src="data/zeroGravity.mp4" allowfullscreen></iframe>
+          <iframe class="custom-iframe" src="data/arm2.mp4" allowfullscreen></iframe>
           <div class="custom-video-label">C</div> <!-- Label for the video, can be customized -->
       </div>
   </div>
@@ -429,7 +429,7 @@
        &nbsp right video involves using the algorithm for depth recovery. It is not the neck that is rotating, but the eyes; rather,
        the extrinsic parameters of the two cameras are continuously changing.
        Compared to traditional fixed cameras, the Field of View (FOV) can increase by 200%. 
-      The relationship with the previous work is that one is responsible for image stabilization, and the other for increasing the field of view.
+      The relationship with the previous work is that one is responsible for image stabilization, and the other for increasing the field of view and actively focus on the ROI.
      </custom-p>
 
 
@@ -488,6 +488,15 @@
     </div>
 
     
+    <custom-p><strong>Explain:</strong>left image illustrates the algorithm's schematic. The algorithm has two types of boundary points: the purple frontier points, which are the laser radar’s frontiers, and the red frontier points, which are the visual map’s frontiers. 
+      It utilizes lasers for positioning and to expand the 2D sensory range. The blue parts represent the area of visual 3D reconstruction, while the gaps are the sections awaiting reconstruction. The core of the algorithm is to plan the visiting sequence
+       of these two types of points for autonomous exploration.
+  
+right video shows the complete autonomous active 3D reconstruction using this algorithm, without any pre-settings. The green arrow indicates the direction of the bionic eye’s gaze, which is also the direction of visual servoing.
+   The red arrow points to the visual frontier access points, and the blue arrow indicates the laser frontier access points.
+     </custom-p>
+
+
 
     <h3>An adaptive dexterous hand</h3>
 
@@ -517,19 +526,35 @@
     </div>
   </div>
 
+  <custom-p><strong>Explain:</strong>
+    Left image displays the appearance of the dexterous hand. Right video reveals the structural design of the dexterous hand, 
+    including grasping videos, and simple teaching using a data glove
+
+  </custom-p>
 
   
     <h2>Skills:</h2>
+    <custom-p>
+      <strong>Coding:</strong> C++, Python, MATLAB
+    </custom-p>
+    <p> </p>
+    <custom-p>
+      <strong>Hardware:</strong> PCB design, mechanical design, besides,I have a set of my own highly compact FOC controller supports dual
+       encoder 3-ring control including hollow shaft encoder with 
+      various feedforward and GUI interface, familiar with AI NPU infer.
+    </custom-p>
+    <p> </p>
+    <custom-p>
+      <strong>Software:</strong> Solidworks, Matlab, QT, Altium Designer
+    </custom-p>
+    <p> </p>
+    <custom-p>
+      <strong>Algorithm:</strong> Good at robotic arm lower-level kinematics, floating base dynamics, and trajectory planning, with self-written
+      libraries; also have strong theoretical derivation ability and the ability to insight to the essence and bottleneck of
+      problems, familiar with optimal control, non-linear MPC.
+    </custom-p>
 
-    <p>
-      C++, Python, MATLAB, good at robotic arm lower-level kinematics,
-      dynamics, floating base dynamics, and trajectory planning, with self-written
-      libraries; also have strong theoretical derivation ability and solid
-      engineering skills, the ability to insight to the essence and bottleneck of
-      problems, familiar with optimal control, non-linear MPC, have a set of own
-      FOC controller supports dual encoder 3-ring control various feedforward
-      and GUI interface.
-    </p>
+
 
     <h2>Honors:</h2>
 
