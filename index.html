@@ -158,7 +158,7 @@
           &emsp;<span style="font-size: 150%">I </span> am currently a robot
           algorithm engineer at Huawei's Central Research Laboratories, focusing
           on the key technologies of robots like motor control, robotic arm
-          motion planning and dynamics control, wheel-leg robot whole-body
+          motion planning and dynamics control and wheel-leg robot whole-body
           nonlinear MPC control. I graduated from
          <a href="https://english.bit.edu.cn/">Beijing Institute of Technology(BIT)</a> with a
           bachelor's degree in mechanical and electronic engineering in 2017. I
@@ -213,9 +213,9 @@
       uses Acados's nonlinear solver. The contact force at the wheel-foot is decomposed into normal and 
       tangential components, with friction cone constraints incorporated as 
       <strong>nonlinear constraints</strong> in the <strong>nonlinear MPC</strong>. The remaining constraints involve kinematic feasibility. Unlike the ETH Anymal, 
-      the entire wheel-foot system is closer to a Ackerman vehicle in Top-down view. Furthermore,<strong>floating-based kinematic and dynamics</strong> are
+      the entire wheel-foot system is closer to an Ackerman vehicle in a top-down view. Furthermore,<strong>floating-based kinematics and dynamics</strong> are
       employed to achieve <strong>18-DOF full-body Jacobian null-space control</strong> and
-      whole-body grasping. It can also achieve balance while  crossing obstacle.
+      whole-body grasping. It can also achieve balance while  crossing obstacles.
     </p>
 
     <h4>Some demos:</h4>
@@ -255,13 +255,13 @@
   </div>
 
 <custom-p><strong>Explain:</strong>A: Simulation and comparison of a 12-degree-of-freedom car chassis in inclined, dual Ackermann, and in-place spinning mode. 
-  &nbsp&nbspB: Crossing slopes and stairs while maintaining balance of a cup at the end.
+  &nbsp&nbspB: Crossing slopes and stairs while maintaining a balance of a cup at the surface.
   &nbsp&nbspC: Servo end-effector pose during whole-body stationary movement. 
-  &nbsp&nbsp D: 18-degree-of-freedom pecking mode. &nbsp&nbspE: Chassis with dual-wheels standing. &nbsp&nbspF: Simulation of an 18-degree-of-freedom door opening.</custom-p>
+  &nbsp&nbsp D: 18-degree-of-freedom pecking mode. &nbsp&nbspE: Chassis with dual-wheel standing. &nbsp&nbspF: Simulation of an 18-degree-of-freedom door opening.</custom-p>
 
 
 
-    <h3>An unified implementation of Point-mass model for 4WIS robot</h3>
+    <h3>An unified implementation of the point-mass model for the 4WIS robot</h3>
 
     <p>
       In this work, I approach adopt a <strong>continuous optimization mindset</strong> to <strong>unify</strong>
@@ -271,7 +271,7 @@
       traditional 4WIS independent control methods, which rely on discrete
       judgments to switch between motion modes. With this method, the controller
       can automatically decompose any VX, VY, W commands given to the vehicle in
-      a two-dimensional plane into a <strong> point-mass model</strong>, which means you can  <strong>follow any trajectory</strong> in plane within max velocity!
+      a two-dimensional plane into a <strong> point-mass model</strong>, which means you can  <strong>follow any trajectory</strong> in the plane within max velocity!
     </p>
 
     <h4>Some demos:</h4>
@@ -294,11 +294,11 @@
     </div>
 </div>
 
-<custom-p><strong>Explain:</strong> left image illustrate various motion modes of an AGV cart, including four-wheel straight-line motion, four-wheel lateral motion, four-wheel oblique motion, dual Ackermann steering, and oblique turning mode.
+<custom-p><strong>Explain: </strong>The left image illustrate various motion modes of an AGV cart, including four-wheel straight-line motion, four-wheel lateral motion, four-wheel oblique motion, dual Ackermann steering, and oblique turning mode.
 
-  &nbsp A is a simulation where the four wheels continuously switch between multiple modes, all controlled by a single optimized equation for seamless motion.
+  &nbspVideo A is a simulation where the four wheels continuously switch between multiple modes, all controlled by a single optimized equation for seamless motion.
   
-  &nbsp B is a physical demonstration of the simulation shown in A.
+  &nbsp Video B is a physical demonstration of the simulation shown in A.
  </custom-p>
 
 
@@ -340,11 +340,11 @@
           <div class="custom-video-label">C</div> <!-- Label for the video, can be customized -->
       </div>
   </div>
-  <custom-p><strong>Explain:</strong>A is a robotic arm moving in a straight line, with a 2KG load at the end, drawing a rectangle.
+  <custom-p><strong>Explain: </strong> Video A is a robotic arm moving in a straight line, with a 2KG load at the end, drawing a rectangle.
 
-    &nbsp B includes various modes of the robotic arm, involving multiple curved motions in joint space and Cartesian straight-line motion.
+    &nbsp Video B includes various modes of the robotic arm, involving multiple curved motions in joint space and Cartesian straight-line motion.
     
-    &nbsp C is the robotic arm operating in a zero-force mode with dynamic compensation
+    &nbspVideo C is the robotic arm operating in a zero-force mode with dynamic compensation.
    </custom-p>
   
 
@@ -423,13 +423,14 @@
     <p>   </p>
   
 
-    <custom-p><strong>Explain:</strong>left is a schematic diagram of the algorithm, which consists of two steps, 
+    <custom-p><strong>Explain: </strong>The left is a schematic diagram of the algorithm, which consists of two steps, 
       taking multiple sets of pictures at two different locations.
   
-       &nbsp right video involves using the algorithm for depth recovery. It is not the neck that is rotating, but the eyes; rather,
+       &nbsp The right video involves using the algorithm for depth recovery. It is not the neck that is rotating, but the eyes; rather,
        the extrinsic parameters of the two cameras are continuously changing.
        Compared to traditional fixed cameras, the Field of View (FOV) can increase by 200%. 
-      The relationship with the previous work is that one is responsible for image stabilization, and the other for increasing the field of view and actively focus on the ROI.
+      The relationship with the previous work is that one is responsible for image stabilization, and the other for increasing the field of view and actively 
+      focusing on the ROI.
      </custom-p>
 
 
@@ -453,7 +454,7 @@
       determine the access order of these void points, and integrating the BV
       (Best View) concept, the algorithm employs the ray projection method to
       determine the information gain of the field of view. Furthermore, based on
-      position-based visual servoing, the biomimetic eyes are directed to always
+      position-based visual servoing. The biomimetic eyes are directed to always
       gaze in the direction of maximum information gain. An exploration strategy
       based on eye-foot coordination is set, and tasks are allocated based on
       the ratio of 3D scene coverage to 2D map coverage. This enables the robot
@@ -488,15 +489,15 @@
     </div>
 
     
-    <custom-p><strong>Explain:</strong>left image illustrates the algorithm's schematic. The algorithm has two types of boundary points: the purple frontier points, which are the laser radar’s frontiers, and the red frontier points, which are the visual map’s frontiers. 
+    <custom-p><strong>Explain: </strong>The left image illustrates the algorithm's schematic. The algorithm has two types of boundary points: the purple frontier points, which are the laser radar’s frontiers, and the red frontier points, which are the visual map’s frontiers. 
       It utilizes lasers for positioning and to expand the 2D sensory range. The blue parts represent the area of visual 3D reconstruction, while the gaps are the sections awaiting reconstruction. The core of the algorithm is to plan the visiting sequence
        of these two types of points for autonomous exploration.
   
-right video shows the complete autonomous active 3D reconstruction using this algorithm, without any pre-settings. The green arrow indicates the direction of the bionic eye’s gaze, which is also the direction of visual servoing.
+&nbsp The right video shows the complete autonomous active 3D reconstruction using this algorithm, without any pre-settings. The green arrow indicates the direction of the bionic eye’s gaze, which is also the direction of visual servoing.
    The red arrow points to the visual frontier access points, and the blue arrow indicates the laser frontier access points.
      </custom-p>
 
-
+<p> </p>
 
     <h3>An adaptive dexterous hand</h3>
 
@@ -526,8 +527,8 @@ right video shows the complete autonomous active 3D reconstruction using this al
     </div>
   </div>
 
-  <custom-p><strong>Explain:</strong>
-    Left image displays the appearance of the dexterous hand. Right video reveals the structural design of the dexterous hand, 
+  <custom-p><strong>Explain: </strong>
+    The left image displays the appearance of the dexterous hand. The right video reveals the structural design of the dexterous hand, 
     including grasping videos, and simple teaching using a data glove
 
   </custom-p>
@@ -539,9 +540,9 @@ right video shows the complete autonomous active 3D reconstruction using this al
     </custom-p>
     <p> </p>
     <custom-p>
-      <strong>Hardware:</strong> PCB design, mechanical design, besides,I have a set of my own highly compact FOC controller supports dual
+      <strong>Hardware:</strong> PCB design, mechanical design, besides, I have a set of my own highly compact FOC controller which supports dual
        encoder 3-ring control including hollow shaft encoder with 
-      various feedforward and GUI interface, familiar with AI NPU infer.
+      various feedforward and GUI interfaces, familiar with AI NPU infer.
     </custom-p>
     <p> </p>
     <custom-p>
@@ -550,7 +551,7 @@ right video shows the complete autonomous active 3D reconstruction using this al
     <p> </p>
     <custom-p>
       <strong>Algorithm:</strong> Good at robotic arm lower-level kinematics, floating base dynamics, and trajectory planning, with self-written
-      libraries; also have strong theoretical derivation ability and the ability to insight to the essence and bottleneck of
+      libraries; also have strong theoretical derivation ability and the ability to insight into the essence and bottleneck of
       problems, familiar with optimal control, non-linear MPC.
     </custom-p>
 
