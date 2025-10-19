@@ -155,7 +155,7 @@
     <div style="display: flex">
       <div style="flex: 1">
         <p style="text-indent: 2em; font-size: 100%">
-          &emsp;<span style="font-size: 150%">I </span> am currently a robot
+          &emsp;<span style="font-size: 150%">I </span> am currently a senior robot
           algorithm engineer at Huawei's Central Research Laboratories, focusing
           on the key technologies of robots like motor control, robotic arm
           motion planning and dynamics control and wheel-leg robot whole-body
@@ -204,6 +204,58 @@
       (The following work is finished as the main contributor; some work is
       <strong>publication-limited</strong>)
     </p>
+  <h3>Humanoid robot for embodied AI(Some acadamic work is publication-limited)</h3>
+
+    <p>
+      As the hardware leader(V1.0,V2.0 and ongoing V3.0) and one of the key contributor of WBC algorithm, I spearheaded the design of an advanced embodied AI robot, integrating 7-DOF dual arms with force-controlled grippers and a 3-DOF waist mechanism, all atop an omni-directional wheel chassis.
+       My work includes the development of a comprehensive optimization control system that requires only the end positions of both hands as input.
+       By leveraging an offline Inverse Kinematics (IK) table for initial values with KD-search method, 
+      the system excels in optimizing for self-collision avoidance, manipulability, and adherence to human-like joint constraints,
+       achieving an impressive near 100% IK success rate within the reachable space.
+       In conjunction with the RRT-CONNECT algorithm, 
+      this ensures the generation of collision-free trajectories. Additionally,  I also realized an efficient end-effector acquisition system utilizing Vive Trackers and manus data gloves, 
+      I have successfully developed a highly realistic human motion retargeting algorithm. This advanced technique enables the precise transfer of nuanced human motions from a source character to a target character with significantly different skeletal proportions and morphology, which is universally compatible with most humanoid robots. This system simplifies data collection, eliminating the need for complex exoskeletons or inertial motion capture equipment. 
+    </p>
+
+    <h4>Some demos:</h4>
+    <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/20251019/V1_0.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">A</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/20251019/v2_optical.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">B</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data//20251019/data_collect.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">C</div>
+      </div>
+  </div>
+  
+  <p></p>
+  
+  <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data//20251019/V2_ALL.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">D</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/20251019/coffee.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">E</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/20251019/retarget.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">F</div>
+      </div>
+  </div>
+
+  <custom-p><strong>Explain: </strong>A:Explain: A: Teleoperation of a force-controlled gripper to pour water,All grippers are equipped with force feedback at V1.0 platform.  
+    &nbsp&nbspB:Execution of standard robotic arm commands with generation of optimal arm postures.
+    &nbsp&nbspC:Teleoperation using Vive Tracker and data gloves.
+    &nbsp&nbsp D:​Full workflow for picking up a coffee tray. &nbsp&nbspE: ​Full workflow for pouring coffee,​​ including activating the coffee machine by pressing its button. &nbsp&nbspF: A highly anthropomorphic retargeting algorithm considering mimic joint (LinkHand L10) that accurately maps thumb and index finger movements, enabling complex manipulations.</custom-p>
+  
+
 
     <h3>Hybrid robot consisting of 18-DOF legged robot + robotic arm</h3>
 
