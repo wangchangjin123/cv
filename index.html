@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changjin Wang</title>
+    
+    <style>
+      .custom-video-container {
+          display: flex; /* 使用flex布局 */
+          flex-wrap: wrap; /* 允许内容换行 */
+          justify-content: space-around; /* 分散对齐每个视频和标签 */
+          align-items: flex-start; /* 垂直对齐开始位置 */
+          max-width: 960px; /* 容器的最大宽度，确保三个视频可以在一行内展示 */
+          margin: auto; /* 整个容器居中 */
+      }
+      .custom-video-box {
+          display: flex; /* 使用flex布局 */
+          flex-direction: column; /* 垂直排列 */
+          align-items: center; /* 垂直居中对齐子项 */
+          flex: 0 0 290px; /* 不允许视频盒子增长或缩小，固定宽度为300px */
+          margin: 1px; /* 视频框之间的间隔 */
+      }
+      .custom-iframe {
+          display: block; /* 设置为块级元素 */
+          width: 100%; /* 宽度100%相对于父元素 */
+          height: 180px; /* 固定高度 */
+         
+      }
+      .custom-video-label {
+          margin-top: 4px; /* 标签顶部间隔 */
+          font-size: 12px; /* 字体大小 */
+          font-weight: bold; /* 字体加粗 */
+          
+      }
+      .custom-p {
+        margin-top: 4px; /* 上边距 */
+        margin-bottom: 4px; /* 下边距 */
+        font-size: 16px; /* 可选，调整字体大小 */
+
+    }
+    .item-label {
+      margin-top: 4px; /* Margin above the label */
+      font-size: 16px; /* Font size of the label */
+      font-weight: bold; /* Make the label text bold */
+  }
+  </style>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+
+      h3,
+      h4 {
+        color: black;
+        text-indent: 1em;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      video {
+        max-width: 100%;
+      }
+
+      iframe {
+        max-width: 100%;
+        height: auto;
+      }
+      p {
+        text-indent: 2em;
+        line-height: 1.5;
+        font-family: Arial, sans-serif; /* Adjusted font-family */
+        margin-bottom: 15px; 
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li::before {
+        color: black;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        font-family: Arial, sans-serif; /* Adjusted font-family */
+       
+      }
+      .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Adjusted property for even distribution */
+        gap: 0px;
+    }
+
+    .video-container iframe,
+    .video-container img{
+        max-width: calc(33.33% - 30px);
+        flex: 1 0 0;
+        height: auto;
+        border: none; /* Remove the black border */
+    }
+    .row {
+      display: flex;
+      justify-content: space-between; /* Adjust this property */
+      gap: 10px;
+      margin-bottom: 20px;
+  }
+    .row img {
+      max-width: calc(45% - 10px);
+      flex: 1 0 0;
+      height: auto;
+      width: 300px; 
+  }
+
+  .row iframe {
+      max-width: calc(45% - 10px);
+      flex: 1 0 0;
+      height: auto;
+      border: none !important;
+  }
+  .bili {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.bilibili {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+      @media only screen and (max-width: 600px) {
+        /* Adjust styles for mobile devices */
+        body {
+          padding: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <span style="font-size: 50px; color: black">Changjin Wang</span>
+    </center>
+
+    <div style="display: flex">
+      <div style="flex: 1">
+        <p style="text-indent: 2em; font-size: 100%">
+          &emsp;<span style="font-size: 150%">I </span> am currently a senior robot
+          algorithm engineer at Huawei's Central Research Laboratories, focusing
+          on the key technologies of robots like motor control, robotic arm
+          motion planning and dynamics control and wheel-leg robot whole-body
+          nonlinear MPC control. I graduated from
+         <a href="https://english.bit.edu.cn/">Beijing Institute of Technology (BIT)</a> with a
+          bachelor's degree in mechanical and electronic engineering in 2017. I
+          was subsequently guaranteed enrolled in the Robotics Institute of BIT
+          and got a master's degree in 2020. I received joint training and
+          graduate guidance at <a href="https://www.auckland.ac.nz/en.html">the University of Auckland (UoA)</a>, New
+          Zealand.
+        </p>
+      </div>
+      <div style="width: 110px; margin-left: 4ch">
+        <img src="data\I.jpeg" height="110" alt="Your Image" style="flex: 0" />
+      </div>
+    </div>
+
+    <h2>Publications</h2>
+
+    <ol>
+      <li>
+        An integrated two-pose calibration method for estimating head-eye
+        parameters of a robotic bionic eye[J].
+        <strong>IEEE Transactions on Instrumentation and Measurement</strong>,
+        2019, 69(4): 1664-1672. Xiaopeng Chen,
+        <strong>Changjin Wang</strong>,
+        Weizhong  Zhang, et al. (2nd Author, the first Author is my tutor)
+        <br />
+        <a href="https://ieeexplore.ieee.org/document/8716717">Paper</a>
+      </li>
+
+      <li>
+        The Design and Development of an Anthropomorphic Worm-Gear Driven
+        Robotic Hand: BIT-JOCKO. 2019 IEEE 4th
+        <strong
+          >International Conference on Advanced Robotics and Mechatronics
+          (ICARM)</strong
+        >.  <strong>Changjin Wang</strong>, Yao Sun, Jiafeng Xu, etc. Best Paper Finalist
+        <br />
+        <a href="https://ieeexplore.ieee.org/document/8834213">Paper</a>
+      </li>
+    </ol>
+
+    <h2>Work & Research</h2>
+    <p>
+      (The following work is finished as the main contributor; some work is
+      <strong>publication-limited</strong>)
+    </p>
+  <h3>Humanoid robot for embodied AI(Some acadamic work is publication-limited)</h3>
+
+    <p>
+      As the hardware leader(V1.0,V2.0 and ongoing V3.0) and one of the key contributor of WBC algorithm, I spearheaded the design of an advanced embodied AI robot, integrating 7-DOF dual arms with force-controlled grippers and a 3-DOF waist mechanism, all atop an omni-directional wheel chassis.
+       My work includes the development of a comprehensive optimization control system that requires only the end positions of both hands as input.
+       By leveraging an offline Inverse Kinematics (IK) table for initial values with KD-search method, 
+      the system excels in optimizing for self-collision avoidance, manipulability, and adherence to human-like joint constraints,
+       achieving an impressive near 100% IK success rate within the reachable space.
+       In conjunction with the RRT-CONNECT algorithm, 
+      this ensures the generation of collision-free trajectories. Additionally,  I also realized an efficient end-effector acquisition system utilizing Vive Trackers and manus data gloves, 
+      I have successfully developed a highly realistic human motion retargeting algorithm. This advanced technique enables the precise transfer of nuanced human motions from a source character to a target character with significantly different skeletal proportions and morphology, which is universally compatible with most humanoid robots. This system simplifies data collection, eliminating the need for complex exoskeletons or inertial motion capture equipment. 
+    </p>
+
+    <h4>Some demos:</h4>
+    <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/20251019/V1_0.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">A</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/20251019/v2_optical.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">B</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data//20251019/data_collect.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">C</div>
+      </div>
+  </div>
+  
+  <p></p>
+  
+  <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data//20251019/V2_ALL.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">D</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/20251019/coffee.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">E</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/20251019/retarget.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">F</div>
+      </div>
+  </div>
+
+  <custom-p><strong>Explain: </strong>A:Explain: A: Teleoperation of a force-controlled gripper to pour water,All grippers are equipped with force feedback at V1.0 platform.  
+    &nbsp&nbspB:Execution of standard robotic arm commands with generation of optimal arm postures.
+    &nbsp&nbspC:Teleoperation using Vive Tracker and data gloves.
+    &nbsp&nbsp D:​Full workflow for picking up a coffee tray. &nbsp&nbspE: ​Full workflow for pouring coffee,​​ including activating the coffee machine by pressing its button. &nbsp&nbspF: A highly anthropomorphic retargeting algorithm considering mimic joint (LinkHand L10) that accurately maps thumb and index finger movements, enabling complex manipulations.</custom-p>
+  
+
+
+    <h3>Hybrid robot consisting of 18-DOF legged robot + robotic arm</h3>
+
+    <p>
+      The entire system consists of a 12-DOF wheel-legged robot + 6-DOF robotic
+      arm. The legged robot adopts a similar algorithmic framework as ETH and
+      uses Acados's nonlinear solver. The contact force at the wheel-foot is decomposed into normal and 
+      tangential components, with friction cone constraints incorporated as 
+      <strong>nonlinear constraints</strong> in the <strong>nonlinear MPC</strong>. The remaining constraints involve kinematic feasibility. Unlike the ETH Anymal, 
+      the entire wheel-foot system is closer to an Ackerman vehicle in a top-down view. Furthermore,<strong>floating-based kinematics and dynamics</strong> are
+      employed to achieve <strong>18-DOF full-body Jacobian null-space control</strong> and
+      whole-body grasping. It can also achieve balance while  crossing obstacles.
+    </p>
+
+    <h4>Some demos:</h4>
+  
+
+  
+  <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/demo1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">A</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/balance1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">B</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/wbc1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">C</div>
+      </div>
+  </div>
+  
+  <p></p>
+  
+  <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/chickenHead1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">D</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/stand1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">E</div>
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/opendoor1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">F</div>
+      </div>
+  </div>
+
+<custom-p><strong>Explain: </strong>A: Simulation and comparison of a 12-degree-of-freedom car chassis in inclined, dual Ackermann, and in-place spinning mode. 
+  &nbsp&nbspB: Crossing slopes and stairs while maintaining a balance of a cup at the surface.
+  &nbsp&nbspC: Servo end-effector pose during whole-body stationary movement. 
+  &nbsp&nbsp D: 18-degree-of-freedom pecking mode. &nbsp&nbspE: Chassis with dual-wheel standing. &nbsp&nbspF: Simulation of an 18-degree-of-freedom door opening.</custom-p>
+
+
+
+    <h3>An unified implementation of the point-mass model for the 4WIS robot</h3>
+
+    <p>
+      In this work, I approach adopt a <strong>continuous optimization mindset</strong> to <strong>unify</strong>
+      the four-wheel modes. A single optimization formula is used to address the
+      issues of lateral, oblique, Ackerman steering, and in-place spinning
+      within the four-wheel steering context which can achieve <strong>optimal energy consumption</strong>. This is <strong>in contrast to</strong> the
+      traditional 4WIS independent control methods, which rely on discrete
+      judgments to switch between motion modes. With this method, the controller
+      can automatically decompose any VX, VY, W commands given to the vehicle in
+      a two-dimensional plane into a <strong> point-mass model</strong>, which means you can  <strong>follow any trajectory</strong> in the plane within max velocity!
+    </p>
+
+    <h4>Some demos:</h4>
+
+    <p>   </p>
+
+  
+  <div class="custom-video-container">
+    <div class="custom-video-box">
+        <img class="custom-img" src="data/centroid.png" alt="Your Image">
+      
+    </div>
+    <div class="custom-video-box">
+        <iframe class="custom-iframe" src="data/centroid_simulation.mp4" allowfullscreen></iframe>
+        <div class="custom-video-label">A</div> <!-- 模拟的标签，可以更改 -->
+    </div>
+    <div class="custom-video-box">
+        <iframe class="custom-iframe" src="data/AGV1.mp4" allowfullscreen></iframe>
+        <div class="custom-video-label">B</div> <!-- 模型的标签，可以更改 -->
+    </div>
+</div>
+
+<custom-p><strong>Explain: </strong>The left image illustrate various motion modes of an AGV, including four-wheel straight-line motion, four-wheel lateral motion, four-wheel oblique motion, dual Ackermann steering, and oblique turning mode.
+
+  &nbspVideo A is a simulation where the four wheels continuously switch between multiple modes, all controlled by a single optimized equation for seamless motion.
+  
+  &nbsp Video B is a physical demonstration of the simulation shown in A.
+ </custom-p>
+
+
+
+
+
+    <h3>
+      A low-cost, low-inertia, low-mass compliant force-controlled robotic arm
+    </h3>
+
+    <p>
+      In response to the challenges faced by mobile robots in terms of the
+      existing UR arm, which is costly, heavy, and inconvenient for mobile
+      robots like quadruped deployments, a new lightweight and low-inertia
+      robotic arm with a PIEPPER configuration has been designed. This arm
+      completes <strong>kinematics, dynamics, trajectory planning, motion interpolation</strong>
+      and polynomial interpolation based on self-developed FOC (Field-Oriented
+      Control) drivers. interpolation is integrated into the FOC driver to achieve higher precision and smoothness. <strong>Moveit architecture has been discarded</strong>, and in its
+      place, a real-time high-performance lightweight robot library has been
+      independently written. <strong>The 5kg arm can carry a 2.5 kg payload with a
+        repeatability of about 1mm and reachable length of 920mm</strong>and it is cost-effective, making it very
+      suitable for mobile robots to carry.
+    </p>
+
+    <h4>Some demos:</h4>
+
+    <p>   </p>
+    <div class="custom-video-container">
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/arm0.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">A</div> <!-- Label for the video, can be customized -->
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/arm1.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">B</div> <!-- Label for the video, can be customized -->
+      </div>
+      <div class="custom-video-box">
+          <iframe class="custom-iframe" src="data/arm2.mp4" allowfullscreen></iframe>
+          <div class="custom-video-label">C</div> <!-- Label for the video, can be customized -->
+      </div>
+  </div>
+  <custom-p><strong>Explain: </strong> Video A is a robotic arm moving in a straight line, with a 2KG load at the end, drawing a rectangle.
+
+    &nbsp Video B includes various modes of the robotic arm, involving multiple curved motions in joint space and Cartesian straight-line motion.
+    
+    &nbspVideo C is the robotic arm operating in a zero-force mode with dynamic compensation.
+   </custom-p>
+  
+
+
+    <h4>
+      Amazing partner's video: 
+      <a
+        href="https://www.bilibili.com/video/BV1Wz4y1V7vL/?spm_id_from=333.999.0.0"
+        >ICRA2024 BiliBili</a
+      >
+    </h4>
+
+    <h3>
+      One biomimetic eye attitude stabilization algorithm based on gravity
+      compensation
+    </h3>
+
+    <p>
+      This project is a research topic during the master's degree stage,
+      focusing on how biomimetic eye robots maintain mechanical stability during
+      motion. A biomimetic eye mechanical stabilization algorithm based on
+      <strong>gravity compensation and attitude disturbance observation</strong> has been
+      proposed. It compensates for the dynamic response delay caused by gravity
+      and serves as a force feedforward. Meanwhile, an observer is utilized to
+      predict and observe disturbances in advance, which acts as a velocity
+      feedforward. This approach has achieved a disturbance rejection of 5Hz and
+      above with a peak angle of 10°, while maintaining the end-effector's
+      stability within 0.5°.
+    </p>
+
+
+
+    <div class="row">
+      <img src="data/bioeye2.png" alt="Your Image">
+      
+      <iframe src="data/bioeye1.mp4" width="250" height="180" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  
+
+
+    <h3>
+      An online bionic eye external parameter calibration and computation
+      algorithm
+    </h3>
+
+    <p>
+      For biomimetic eye robots, the binocular cameras require movement, but
+      once the cameras move, the external parameters (ex-params) are disrupted.
+      To address this issue, a method for offline calibration and online
+      <strong> real-time computation of binocular external parameters</strong> is proposed. This
+      method operates the biomimetic eyes to  compute the external
+      parameters during motion. As a result, the binocular cameras can
+      accurately locate points in the overlapping field of view and recover
+      depth information, even while moving. Compared to fixed cameras, this
+      approach <strong>increases the field of view for moving cameras</strong>.
+    </p>
+
+
+
+    <div style="display: flex; justify-content: space-between; max-width: 100%; overflow: hidden;">
+
+
+      <div style="flex: 1;">
+        <img src="data/itpc.png" alt="Your Image" style="width:70%; height: auto;">
+      </div>
+    
+      <!-- Right column for the video -->
+      <div style="flex: 1; margin-left: 1px;"> <!-- Adjust margin as needed -->
+        <video controls style="width: 120%; height: 100%;">
+          <source src="data/depth.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <p>   </p>
+  
+
+    <custom-p><strong>Explain: </strong>The left is a schematic diagram of the algorithm, which consists of two steps, 
+      taking multiple sets of pictures at two different locations.
+  
+       &nbsp The right video involves using the algorithm for depth recovery. It is not the neck that is rotating, but the eyes; rather,
+       the extrinsic parameters of the two cameras are continuously changing.
+       Compared to traditional fixed cameras, the Field of View (FOV) can increase by 200%. 
+      The relationship with the previous work is that one is responsible for image stabilization, and the other for increasing the field of view and actively 
+      focusing on the ROI.
+     </custom-p>
+
+
+
+
+
+
+
+
+    <h3>
+      A biomimetic eye active exploration algorithm based on eye-foot
+      coordination
+    </h3>
+
+    <p>
+      Utilizing biomimetic eyes as an active stereo vision platform, mounted on
+      a mobile robot to achieve Active SLAM (Simultaneous Localization and
+      Mapping). By leveraging the projection maps of Octomap, combined with
+      Gmapping's contour maps, the algorithm seeks visual reconstruction voids,
+      which are the missing points in the 3D scene. Using an effect function to
+      determine the access order of these void points, and integrating the BV
+      (Best View) concept, the algorithm employs the ray projection method to
+      determine the information gain of the field of view. Furthermore, based on
+      position-based visual servoing. The biomimetic eyes are directed to always
+      gaze in the direction of maximum information gain. An exploration strategy
+      based on eye-foot coordination is set, and tasks are allocated based on
+      the ratio of 3D scene coverage to 2D map coverage. This enables the robot
+      to efficiently complete full-angle 3D reconstruction and 2D map
+      construction in completely unfamiliar environments with a one-click start
+      and full autonomy.
+    </p>
+
+
+
+    <div style="display: flex; align-items: flex-start; max-width: 100%; overflow: hidden;">
+
+      <!-- Left column for the image -->
+      <div style="flex: 1;">
+        <img src="data/eyefoot1.png" alt="Your Image" style="width: 100%; height: auto;">
+      </div>
+    
+      <!-- Right column for the video -->
+      <div style="flex: 1; margin-left: 20px;"> <!-- Adjust margin as needed -->
+        <iframe
+          src="https://player.bilibili.com/player.html?bvid=BV1Fm411X7ac&page=1"
+          scrolling="no"
+          border="0"
+          frameborder="no"
+          framespacing="0"
+          allowfullscreen="true"
+          style="width: 100%; height: auto;"
+        ></iframe>
+      </div>
+      
+
+    </div>
+
+    
+    <custom-p><strong>Explain: </strong>The left image illustrates the algorithm's schematic. The algorithm has two types of boundary points: the purple frontier points, which are the laser radar’s frontiers, and the red frontier points, which are the visual map’s frontiers. 
+      It utilizes lasers for positioning and to expand the 2D sensory range. The blue parts represent the area of visual 3D reconstruction, while the gaps are the sections awaiting reconstruction. The core of the algorithm is to plan the visiting sequence
+       of these two types of points for autonomous exploration.
+  
+&nbsp The right video shows the complete autonomous active 3D reconstruction using this algorithm, without any pre-settings. The green arrow indicates the direction of the bionic eye’s gaze, which is also the direction of visual servoing.
+   The red arrow points to the visual frontier access points, and the blue arrow indicates the laser frontier access points.
+     </custom-p>
+
+<p> </p>
+
+    <h3>An adaptive dexterous hand</h3>
+
+    <p>
+      The worm gear is used to realize the self-locking of the dexterous hand
+      power-off structure, which can theoretically bear the weight within the
+      allowable range of the structural strength. It adopts a modular knuckle
+      design, a highly anthropomorphic design, and has 20 degrees of freedom. It
+      also increases the degree of freedom of the palm side swing, increasing
+      the palm grasping space by 30%.
+    </p>
+
+  
+  <div style="display: flex; justify-content: space-between; max-width: 100%; overflow: hidden;">
+
+
+    <div style="flex: 1;">
+      <img src="data/hand.png" alt="Your Image" style="width: 43%; height: auto;">
+    </div>
+  
+    <!-- Right column for the video -->
+    <div style="flex: 1; margin-left: 1px;"> <!-- Adjust margin as needed -->
+      <video controls style="width: 100%; height: auto;">
+        <source src="data/hand.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <custom-p><strong>Explain: </strong>
+    The left image displays the appearance of the dexterous hand. The right video reveals the structural design of the dexterous hand, 
+    including grasping videos, and simple teaching using a data glove
+
+  </custom-p>
+
+  
+    <h2>Skills:</h2>
+    <custom-p>
+      <strong>Coding:</strong> C++, Python, MATLAB
+    </custom-p>
+    <p> </p>
+    <custom-p>
+      <strong>Hardware:</strong> PCB design, mechanical design, besides, I have a set of my own highly compact FOC controller which supports dual
+       encoder 3-ring control including hollow shaft encoder with 
+      various feedforward and GUI interfaces, familiar with AI NPU infer.
+    </custom-p>
+    <p> </p>
+    <custom-p>
+      <strong>Software:</strong> Solidworks, Matlab, QT, Altium Designer
+    </custom-p>
+    <p> </p>
+    <custom-p>
+      <strong>Algorithm:</strong> Good at robotic arm lower-level kinematics, floating base dynamics, and trajectory planning, with self-written
+      libraries. I also have strong theoretical derivation ability and the ability to insight into the essence and bottleneck of
+      problems, familiar with optimal control, non-linear MPC.
+    </custom-p>
+
+
+
+    <h2>Honors:</h2>
+
+    <ul>
+      <li>
+        Worked at Huawei for 3 years, received two annual A awards, top 15%, and
+        one annual B+.
+      </li>
+      <li>National Scholarship （研究生国家奖学金）</li>
+      <li>National Motivational Scholarship (国家励志奖学金)</li>
+      <li>Tang Nanjun Scholarship （唐南军奖学金）</li>
+      <li>SMC Scholarship （SMC 奖学金）</li>
+      <li>
+        First-class Academic Scholarship for Graduate
+        Students （研究生一等学业奖学金）
+      </li>
+      <li>
+        First Prize in the National College Student "Challenge Cup"
+        Competition （全国大学生挑战杯一等奖）
+      </li>
+      <li>
+        First Prize in the National Aerospace Model
+        Competition （全国科研类航空航天模型锦标赛一等奖）
+      </li>
+      <li>
+        Second Prize in the National College Student Energy Saving and Emission
+        Reduction Competition （全国大学生节能减排大赛二等奖）
+      </li>
+      <li>
+        Top Ten Projects in the National College Student Innovation and
+        Entrepreneurship Annual Meeting （全国互联网+ 大学生创新创业年会双十佳）
+      </li>
+    </ul>
+
+    <h2>Contact:</h2>
+    
+    <p><font color="blue">Email: bitchangjinwang123@163.com</font></p>
+  </body>
+</html>
